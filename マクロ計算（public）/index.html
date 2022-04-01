@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>計算用</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+  <!-- 性別選択 -->
+  <section>
+    <p class="sectionHeading">性別を選択してください</p>
+    <form class="gender" id="gend" name="maleFemale">
+      <input type="radio" name="cr1" value="woman" id="fema" /><label for="fema">女性</label>
+      <input type="radio" name="cr1" value="man" id="ma" /><label for="ma">男性</label>
+    </form>
+  </section>
+  <!-- 身長体重年齢選択 -->
+  <section>
+    <p class="sectionHeading">身長、体重、年齢を入力してください</p>
+    <div class="personaldata">
+      <label class="inputItem">
+        身長：&nbsp;<input type="number" name="tall" id="tall" class="inputContents" />&nbsp;cm
+      </label>
+      <label class="inputItem">
+        体重：&nbsp;<input type="number" name="weight" id="weight" class="inputContents" />&nbsp;kg
+      </label>
+      <label class="inputItem">
+        年齢：&nbsp;<input type="number" name="years" id="years" class="inputContents" />&nbsp;歳
+      </label>
+    </div>
+  </section>
+  <!-- エラー & 計算結果 発火場所 -->
+  <section>
+    <p class="disp-none" id="alert1" style="color: red; text-align: center;">性別が選択されていません</p>
+    <p class="alertText" id="basalmetabo"></p>
+  </section>
+  <button type="button" value="計算" onclick="calc();" class="button1">計算</button>
+  <!-- 活動指標選択 -->
+  <section>
+    <p>マクロバランス算出</p>
+    <p>基礎消費カロリーが計算できたら、次はアクティブ度と目的を選択して、いよいよ一日で摂取するべきカロリーとマクロバランスの量が計算できます。</p>
+
+    <p>活動指標を選択してください</p>
+    <form action="">
+      <label for="stay" class="activityIndex-item"><input type="radio" id="stay"
+          name="index">座り仕事が多く、一日の運動は偶に歩いたり階段を上ったりする程度である</label>
+      <label for="normal" class="activityIndex-item"><input type="radio" id="normal"
+          name="index">立ち仕事や重労働が多く、比較的一日中動き回っている</label>
+      <label for="action" class="activityIndex-item"><input type="radio" id="action"
+          name="index">立ち仕事や重労働が多く、それに加えジムでトレーニングを行ったり運動をしている</label>
+    </form>
+  </section>
+  <!-- 目的選択 -->
+  <section>
+    <p>目的を選択してください</p>
+    <select name="" id="">
+      <option value="loss">減量</option>
+      <option value="maintain">維持</option>
+      <option value="bulk">増量</option>
+    </select>
+  </section>
+  <!-- マクロ算出 -->
+  <section>
+    <p>1日に摂取するべきカロリー数とマクロバランスを算出します</p>
+    <button type="button" value="計算" onclick="macroBalance();" class="button1" id="btn2">計算開始</button>
+  </section>
+  <script src="./index.js"></script>
+</body>
+
+</html>
