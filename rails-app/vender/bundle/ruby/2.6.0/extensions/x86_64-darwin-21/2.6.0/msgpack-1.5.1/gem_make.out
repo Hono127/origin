@@ -1,0 +1,29 @@
+current directory: /Users/onohiroshisei/rails-app/vender/bundle/ruby/2.6.0/gems/msgpack-1.5.1/ext/msgpack
+/Users/onohiroshisei/.rbenv/versions/2.6.2/bin/ruby -I /Users/onohiroshisei/.rbenv/versions/2.6.2/lib/ruby/2.6.0 -r ./siteconf20220409-34914-11rtcrj.rb extconf.rb
+checking for ruby/st.h... yes
+checking for st.h... yes
+checking for rb_enc_interned_str() in ruby.h... no
+creating Makefile
+
+current directory: /Users/onohiroshisei/rails-app/vender/bundle/ruby/2.6.0/gems/msgpack-1.5.1/ext/msgpack
+make "DESTDIR=" clean
+
+current directory: /Users/onohiroshisei/rails-app/vender/bundle/ruby/2.6.0/gems/msgpack-1.5.1/ext/msgpack
+make "DESTDIR="
+compiling buffer.c
+compiling buffer_class.c
+compiling extension_value_class.c
+compiling factory_class.c
+compiling packer.c
+compiling packer_class.c
+compiling packer_ext_registry.c
+compiling rbinit.c
+compiling rmem.c
+compiling unpacker.c
+compiling unpacker_class.c
+compiling unpacker_ext_registry.c
+linking shared-object msgpack/msgpack.bundle
+
+current directory: /Users/onohiroshisei/rails-app/vender/bundle/ruby/2.6.0/gems/msgpack-1.5.1/ext/msgpack
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20220409-34914-ik3fpu/msgpack
